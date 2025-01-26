@@ -16,11 +16,11 @@ export default function Testimonials() {
               the process fun and interesting. Good luck!
             </p>
             <div className="flex items-center">
-              <img
+              {/* <img
                 src="https://via.placeholder.com/50"
                 alt="Jane Doe"
                 className="w-12 h-12 rounded-full mr-4"
-              />
+              /> */}
               <div>
                 <h3 className="font-bold">Jane Doe</h3>
                 <p className="text-sm text-gray-500">Themeforest Customer</p>
@@ -35,11 +35,11 @@ export default function Testimonials() {
               the process fun and interesting. Good luck!
             </p>
             <div className="flex items-center">
-              <img
+              {/* <img
                 src="https://via.placeholder.com/50"
                 alt="Helen Doe"
                 className="w-12 h-12 rounded-full mr-4"
-              />
+              /> */}
               <div>
                 <h3 className="font-bold">Helen Doe</h3>
                 <p className="text-sm text-gray-500">Themeforest Customer</p>

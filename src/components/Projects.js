@@ -11,7 +11,7 @@ function Projects() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <div key={index} className="border rounded-lg overflow-hidden shadow-lg">
-                <img src={project.img} alt={project.title} className="w-full h-48 object-cover" />
+                {/* <img src={project.img} alt={project.title} className="w-full h-48 object-cover" /> */}
                 <div className="p-4">
                   <h3 className="text-xl font-bold">{project.title}</h3>
                   <p className="text-gray-600">{project.description}</p>

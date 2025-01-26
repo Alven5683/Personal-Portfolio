@@ -9,11 +9,11 @@ export default function RecentPosts() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Post 1 */}
             <div className="bg-gray-50 rounded-xl shadow-md overflow-hidden">
-              <img
+              {/* <img
                 src="https://via.placeholder.com/400"
                 alt="Post Image"
                 className="w-full h-48 object-cover"
-              />
+              /> */}
               <div className="p-6">
                 <span className="text-sm bg-red-100 text-red-500 px-3 py-1 rounded-full">
                   Thoughts
@@ -29,11 +29,11 @@ export default function RecentPosts() {
   
             {/* Post 2 */}
             <div className="bg-gray-50 rounded-xl shadow-md overflow-hidden">
-              <img
+              {/* <img
                 src="https://via.placeholder.com/400"
                 alt="Post Image"
                 className="w-full h-48 object-cover"
-              />
+              /> */}
               <div className="p-6">
                 <span className="text-sm bg-red-100 text-red-500 px-3 py-1 rounded-full">
                   Blog
@@ -49,11 +49,11 @@ export default function RecentPosts() {
   
             {/* Post 3 */}
             <div className="bg-gray-50 rounded-xl shadow-md overflow-hidden">
-              <img
+              {/* <img
                 src="https://via.placeholder.com/400"
                 alt="Post Image"
                 className="w-full h-48 object-cover"
-              />
+              /> */}
               <div className="p-6">
                 <span className="text-sm bg-red-100 text-red-500 px-3 py-1 rounded-full">
                   Thoughts

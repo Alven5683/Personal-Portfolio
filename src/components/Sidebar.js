@@ -20,11 +20,11 @@ export default function Sidebar() {
     <nav className="w-64 bg-blue-700 text-white fixed h-full flex flex-col items-center py-8 rounded-r-3xl shadow-lg">
       {/* Profile Section */}
       <div className="flex flex-col items-center mb-10">
-        <img
+        {/* <img
           src="https://via.placeholder.com/80"
           alt="Profile"
           className="w-20 h-20 rounded-full mb-4 border-4 border-white"
-        />
+        /> */}
         <h2 className="text-2xl font-bold">Bako Doe</h2>
         <p className="text-sm text-gray-300">Web Developer</p>
       </div>
