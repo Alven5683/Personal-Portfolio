@@ -1,7 +1,7 @@
 "use client";
 
 import Head from "next/head";
-import { useState } from "react";
+import { useState } from "react"; // <-- Ensure this is imported
 import Testimonials from "@/components/Testimonials";
 import Partner from "@/components/Partner";
 import Post from "@/components/Post";
@@ -15,7 +15,6 @@ import Skill from "@/components/Skill";
 import About from "@/components/About";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
 
@@ -28,7 +27,7 @@ export default function Home() {
     { id: "contact", title: "Contact" },
   ];
 
-  const scrollToSection = (id) => {
+  const scrollToSection = (id: string) => {
     setActiveSection(id);
     const section = document.getElementById(id);
     if (section) {
@@ -49,7 +48,7 @@ export default function Home() {
 
       <div className="flex h-screen bg-gray-100">
         {/* Sidebar */}
-        <nav className="w-64 bg-blue-700 text-white fixed top-[100px] bottom-[40px] left-[55px]  flex flex-col items-center py-8 px-4 rounded-3xl shadow-lg">
+        <nav className="w-64 bg-blue-700 text-white fixed top-[100px] bottom-[40px] left-[50px] flex flex-col items-center py-8 px-4 rounded-3xl shadow-lg">
           {/* Profile Section */}
           <div className="flex flex-col items-center mb-10">
             <img
@@ -75,7 +74,6 @@ export default function Home() {
             ))}
           </ul>
 
-
           {/* Social Links */}
           <div className="mt-auto flex pt-8 justify-center space-x-4">
             <a href="#" className="text-white text-xl">
@@ -100,9 +98,6 @@ export default function Home() {
           <section
             id="home"
             className="mb-12 bg-cover bg-center"
-            // style={{
-            //   backgroundImage: "url('/images/971.jpg')",
-            // }}
           >
             <div className="max-w-4xl mx-auto bg-blue-700 bg-opacity-80 pt-40 pb-40 p-20 rounded-xl shadow-lg">
               <h1 className="text-5xl font-extrabold mb-4">
@@ -121,7 +116,6 @@ export default function Home() {
                 </button>
               </div>
             </div>
-
           </section>
           <About />
           <Skill />

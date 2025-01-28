@@ -1,8 +1,12 @@
+import React from 'react';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 import './styles/globals.css';
 
-export default function RootLayout({ children }) {
+interface RootLayoutProps {
+  children: React.ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <head>
