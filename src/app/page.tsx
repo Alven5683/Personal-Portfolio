@@ -97,7 +97,7 @@ export default function Home() {
           {/* Home Section */}
           <section
             id="home"
-            className="mb-12 bg-cover bg-center"
+            className="mb-12 bt-40 bg-cover bg-center"
           >
             <div className="max-w-4xl mx-auto bg-blue-700 bg-opacity-80 pt-40 pb-40 p-20 rounded-xl shadow-lg">
               <h1 className="text-5xl font-extrabold mb-4">
