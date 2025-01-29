@@ -1,7 +1,7 @@
 "use client";
 
 import Head from "next/head";
-import { useState } from "react"; // <-- Ensure this is imported
+import { useState, useEffect } from "react";
 import Testimonials from "@/components/Testimonials";
 import Partner from "@/components/Partner";
 import Post from "@/components/Post";
@@ -22,11 +22,12 @@ export default function Home() {
     { id: "home", title: "Home" },
     { id: "about", title: "About" },
     { id: "services", title: "Services" },
-    { id: "resume", title: "Resume" },
+    { id: "portfolio", title: "Portfolio" },
     { id: "blog", title: "Blog" },
     { id: "contact", title: "Contact" },
   ];
 
+  // Scroll to section when clicking a link
   const scrollToSection = (id: string) => {
     setActiveSection(id);
     const section = document.getElementById(id);
@@ -34,6 +35,31 @@ export default function Home() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  // **Refined Intersection Observer**
+  useEffect(() => {
+    const observerOptions = {
+      root: null, // viewport
+      rootMargin: "0px",
+      threshold: 0.6, // Trigger when 60% of the section is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections
+    sections.forEach((section) => {
+      const el = document.getElementById(section.id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect(); // Cleanup observer
+  }, []);
 
   return (
     <>
@@ -48,7 +74,7 @@ export default function Home() {
 
       <div className="flex h-screen bg-gray-100">
         {/* Sidebar */}
-        <nav className="w-64 bg-blue-700 text-white fixed top-[100px] bottom-[40px] left-[45px] flex flex-col items-center py-8 px-4 rounded-3xl shadow-lg">
+        <nav className="w-64 bg-blue-700 text-white fixed top-[100px] bottom-[40px] left-[50px] flex flex-col items-center py-8 px-4 rounded-3xl shadow-lg">
           {/* Profile Section */}
           <div className="flex flex-col items-center mb-10">
             <img
@@ -65,7 +91,7 @@ export default function Home() {
               <li
                 key={section.id}
                 className={`cursor-pointer text-base font-small pl-12 hover:text-orange-300 ${
-                  activeSection === section.id ? "text-orange-500" : ""
+                  activeSection === section.id ? "text-orange-500 font-bold" : ""
                 }`}
                 onClick={() => scrollToSection(section.id)}
               >
@@ -97,7 +123,7 @@ export default function Home() {
           {/* Home Section */}
           <section
             id="home"
-            className="mb-12 pt-40 bg-cover bg-center"
+            className="mb-12 bt-40 bg-cover bg-center h-screen flex justify-center items-center"
           >
             <div className="max-w-4xl mx-auto bg-blue-700 bg-opacity-80 pt-40 pb-40 p-20 rounded-xl shadow-lg">
               <h1 className="text-5xl font-extrabold mb-4">
