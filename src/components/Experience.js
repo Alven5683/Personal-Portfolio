@@ -9,22 +9,22 @@ const sections = [
     items: [
       {
         title: "MSc IT Master Degree",
-        institution: "Harvard University, Cambridge, MA, United States",
+        institution: "Gujarat University",
         description:
           "Harvard University is an educational institution that offers graduate, professional, and research programs in the fields of and public health.",
-        year: "2010 - 2012",
+        year: "2020 - 2022",
       },
       {
         title: "BCA college complete course",
-        institution: "XYZ University, India",
+        institution: "Shri K. K. Shastri Government Commerce College",
         description: "This course covered software development, database management, and computer networking fundamentals.",
-        year: "2007 - 2010",
+        year: "2016 - 2020",
       },
       {
         title: "High / Higher secondary school",
-        institution: "ABC High School, India",
+        institution: "Bhavanager University",
         description: "Completed higher secondary education with a focus on science and mathematics.",
-        year: "1999 - 2007",
+        year: "2014 - 2015",
       },
     ],
   },
@@ -33,19 +33,19 @@ const sections = [
     icon: "💼",
     items: [
       {
-        title: "ABC Themes - Web Design IT Company",
+        title: "Web3workstore",
         description: "Worked on creating responsive and interactive web designs for various clients.",
-        year: "2020 - 2021",
+        year: "2025 - current",
       },
       {
-        title: "DEF Themes - Creative full stack web design & development",
+        title: "Hillig & Schrot wonderweblabs",
         description: "Led a team to develop full-stack applications with modern frameworks and technologies.",
-        year: "2016 - 2019",
+        year: "2023 - 2024",
       },
       {
-        title: "GHI Themes - Web & App IT Company",
+        title: "praxware technologies",
         description: "Developed web and mobile applications, focusing on UI/UX and backend optimization.",
-        year: "2013 - 2015",
+        year: "2022 - 2023",
       },
     ],
   },
