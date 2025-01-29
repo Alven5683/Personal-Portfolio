@@ -48,7 +48,7 @@ export default function Home() {
 
       <div className="flex h-screen bg-gray-100">
         {/* Sidebar */}
-        <nav className="w-64 bg-blue-700 text-white fixed top-[100px] bottom-[40px] left-[50px] flex flex-col items-center py-8 px-4 rounded-3xl shadow-lg">
+        <nav className="w-64 bg-blue-700 text-white fixed top-[100px] bottom-[40px] left-[45px] flex flex-col items-center py-8 px-4 rounded-3xl shadow-lg">
           {/* Profile Section */}
           <div className="flex flex-col items-center mb-10">
             <img
