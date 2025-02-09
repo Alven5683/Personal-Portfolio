@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
       <section className="py-12 bg-gray-100 text-gray-800 px-8">
-        <div className="max-w-4xl mx-auto bg-white p-10 rounded-xl shadow-lg">
+        <div className="max-w-12xl bg-white p-10 rounded-xl shadow-lg">
           <h2 className="text-3xl font-bold mb-6 text-center">Get in touch</h2>
           <div className="border-t-4 border-red-500 w-16 mx-auto mb-8"></div>
   

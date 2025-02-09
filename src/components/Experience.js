@@ -60,7 +60,7 @@ export default function EducationExperience() {
 
   return (
     <div className="h-auto py-12 bg-gray-100 text-gray-800 text-left px-8">
-      <div className="max-w-4xl mx-auto bg-white p-10 rounded-xl shadow-lg">
+      <div className="max-w-12xl mx-auto bg-white p-10 rounded-xl shadow-lg">
         <h2 className="text-3xl font-bold text-center mb-6">Education & Experience</h2>
         <p className="text-center text-gray-600 mb-8">
           We craft digital, graphic, and dimensional thinking to create category-leading brand experiences that have meaning.

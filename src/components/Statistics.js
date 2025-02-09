@@ -4,7 +4,7 @@ export default function Statistics() {
       id="statistics"
       className="py-12 bg-gray-100 text-gray-800 px-8"
     >
-      <div className="max-w-4xl mx-auto p-10 bg-blue-700 rounded-xl shadow-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-12xl mx-auto p-10 bg-blue-700 rounded-xl shadow-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Stat 1 */}
         <div className="flex flex-col items-center">
           <div className="bg-red-500 p-4 rounded-full mb-4">

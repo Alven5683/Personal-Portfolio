@@ -4,7 +4,7 @@ export default function Skill() {
       id="skill"
       className="py-12 bg-gray-100 text-gray-800 text-center px-8"
     >
-      <div className="max-w-4xl mx-auto bg-white p-10 rounded-xl shadow-lg">
+      <div className="max-w-12xl mx-auto bg-white p-10 rounded-xl shadow-lg">
         <h2 className="text-3xl font-bold mb-6">My Skills</h2>
         <div className="border-t-4 border-red-500 w-16 mx-auto mb-6"></div>
         <p className="text-gray-600 text-sm leading-relaxed mb-8">

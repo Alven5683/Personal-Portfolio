@@ -1,7 +1,7 @@
 export default function Clients() {
   return (
     <section id="clients" className="py-12 text-white text-center px-8">
-      <div className="max-w-4xl mx-auto flex bg-blue-600 p-10 rounded-xl shadow-lg rounded-xl">
+      <div className="max-w-12xl mx-auto flex bg-blue-600 p-10 rounded-xl shadow-lg rounded-xl">
         <div className="w-full text-center">
           <h2 className="text-3xl font-bold mb-4">Looking to Collaborate or Hire?</h2>
           <p className="text-lg">

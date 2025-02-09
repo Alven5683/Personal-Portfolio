@@ -64,7 +64,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Portfolio Template</title>
+        <title>Personal Portfolio</title>
         <meta name="description" content="A professional portfolio website" />
         <link
           rel="stylesheet"
@@ -72,9 +72,9 @@ export default function Home() {
         />
       </Head>
 
-      <div className="flex h-screen bg-gray-100">
+      <div className="h-screen bg-gray-100">
         {/* Sidebar */}
-        <nav className="w-64 bg-blue-700 text-white fixed top-[100px] bottom-[40px] left-[50px] flex flex-col items-center py-8 px-4 rounded-3xl shadow-lg">
+        <nav className="hidden lg:flex lg:w-1/5 w-full h-[600px] bg-blue-700 text-white fixed left-[50px] flex flex-col items-center py-8 px-4 rounded-3xl shadow-lg">
           {/* Profile Section */}
           <div className="flex flex-col items-center mb-10">
             <img
@@ -118,21 +118,24 @@ export default function Home() {
           {/* Footer */}
           <p className="mt-4 text-sm text-white">&copy; 2025 Web3wrokstore</p>
         </nav>
+        {/* Right Sidebar */}
+
         {/* Main Content */}
-        <main className="w-full ml-64 p-1">
+        <main className="lg:w-4/5 w-full p-2 lg:ml-[20%]">
           {/* Home Section */}
           <section
             id="home"
-            className="mb-12 bt-40 bg-cover bg-center h-screen flex justify-center items-center"
+            className="mb-12 bg-cover bg-center  justify-center"
           >
-            <div className="max-w-4xl mx-auto bg-blue-700 bg-opacity-80 pt-40 pb-40 p-20 rounded-xl shadow-lg">
+            <div className="max-w-10xl mx-auto bg-blue-700 bg-opacity-80 pt-40 pb-40 p-20 rounded-xl shadow-lg">
               <h1 className="text-5xl font-extrabold mb-4">
-                I&apos;m <span className="text-white">Akshay Sankhat.</span>
+                I&apos;m <span className="text-white">Akshay Sankhat</span>
               </h1>
               <p className="text-lg text-white leading-relaxed">
-                I specialize in building interactive, dynamic, and scalable web
-                applications using React.js and modern JavaScript frameworks.
+                <span className="text-4xl font-serif">A</span> passionate web developer specializing in building interactive, dynamic, and scalable web applications using React.js and modern JavaScript frameworks.  
+                I focus on crafting seamless user experiences, optimizing performance, and developing robust solutions that bring ideas to life.
               </p>
+
               <div className="mt-6 flex justify-center space-x-4">
                 <button className="px-6 py-3 bg-orange-500 text-white rounded-lg font-medium shadow-md hover:bg-orange-600">
                   <i className="fas fa-folder-open"></i> View Portfolio
