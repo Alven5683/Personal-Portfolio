@@ -121,7 +121,8 @@ export default function Home() {
         {/* Right Sidebar */}
 
         {/* Main Content */}
-        <main className="lg:w-[70%] w-full pl-5 p-2 lg:ml-[30%]">
+        <main className="lg:w-[calc(80%-50px)] w-full p-2 lg:ml-[calc(20%+50px)]">
+
           {/* Home Section */}
           <section
             id="home"
