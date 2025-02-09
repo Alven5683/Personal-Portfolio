@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <>
       <div className="h-1"></div> {/* Fixed section size */}
-      <div className="p-1"></div> {/* Added padding */}
+      <div className="p-10"></div> {/* Added padding */}
 
       <header className="fixed top-4 left-0 w-full bg-blue-700 text-white shadow-lg z-50 rounded-l-[20px] rounded-r-[20px]">
         <div className="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
